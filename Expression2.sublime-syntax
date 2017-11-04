@@ -1,0 +1,103 @@
+%YAML 1.2
+---
+name: Expression 2
+file_extensions: txt
+scope: source.expression2
+
+variables:
+  directives: '@name\s\S*|@inputs|@outputs|@persist|@trigger\s\S*|@model\s\S*|@autoupdate'
+  operators: \+|\-|\*|\/|\%|\^|\=|\!|\<|\>|\&|\||\[|\]|\$|\?|\:|\.|\(|\)|\{|\}|\,
+  keywords: if|elseif|else|for|foreach|while|return|break|continue|switch|case|default|local|function
+  types: angle|array|bone|complex|effect|entity|gtable|matrix|matrix2|matrix4|normal|number|quaternion|ranger|string|table|vector|vector2|vector4|void|wirelink
+  constants: _FILE_UNKNOWN|_FILE_OK|_FILE_TIMEOUT|_PI|_E|_PHI|_HUD_PRINTCENTER|_HUD_PRINTCONSOLE|_HUD_PRINTNOTIFY|_HUD_PRINTTALK|_TEXFILTER_NONE|_TEXFILTER_POINT|_TEXFILTER_LINEAR|_TEXFILTER_ANISOTROPIC
+  functions: aabbMax|aabbMin|aabbSize|abs|acfActive|acfAmmoCount|acfAmmoType|acfBlastRadius|acfBrake|acfBrakeLeft|acfBrakeRight|acfCVTRatio|acfCaliber|acfCapacity|acfClutch|acfClutchLeft|acfClutchRight|acfDragDiv|acfEffectiveArmor|acfFLSpikeMass|acfFLSpikeRadius|acfFLSpikes|acfFinalRatio|acfFire|acfFireRate|acfFlyInertia|acfFlyMass|acfFuel|acfFuelLevel|acfFuelRequired|acfFuelUse|acfGear|acfGearRatio|acfHitClip|acfHoldGear|acfIdleRPM|acfInGear|acfInPowerband|acfInfoRestricted|acfIsAmmo|acfIsDual|acfIsEngine|acfIsFuel|acfIsGearbox|acfIsGun|acfIsReloading|acfLinkTo|acfLinks|acfMagRounds|acfMagSize|acfMaxPower|acfMaxTorque|acfMuzzleVel|acfName|acfNameShort|acfNumGears|acfPeakFuelUse|acfPenetration|acfPower|acfPowerbandMax|acfPowerbandMin|acfProjectileMass|acfPropArmor|acfPropArmorMax|acfPropDuctility|acfPropHealth|acfPropHealthMax|acfRPM|acfReady|acfRedline|acfRefuelDuty|acfReload|acfRoundType|acfRounds|acfShift|acfShiftDown|acfShiftPointScale|acfShiftTime|acfShiftUp|acfSpread|acfSteerRate|acfThrottle|acfTorque|acfTorqueOut|acfTorqueRating|acfTotalAmmoCount|acfTotalRatio|acfType|acfUnlinkFrom|acfUnload|acos|acosr|add|adj|aimBone|aimEntity|aimNormal|aimPos|airDensity|ammoCount|ang|angSpeedLimit|angVel|angVelVector|angle|angles|angnorm|applyAngForce|applyForce|applyOffsetForce|applyTorque|arg|armor|array|asin|asinr|atan|atan2|atanr|attachmentAng|attachmentPos|attachments|average|axis|bAnd|bNot|bOr|bShl|bShr|bXor|ballsocket|bearing|bezier|bone|boneCount|bones|boxCenter|boxCenterW|boxMax|boxMin|boxSize|cbrt|ceil|changed|chatClk|clamp|clear|clip1|clip2|clipFromTypeid|clipToTypeid|clk|clkName|clone|column|comp|complex|concat|concmd|conj|constraintBreak|convar|convarnum|convertUnit|cos|cosh|coshr|cosr|cot|coth|cothr|cotr|count|cpuUsage|createWire|cross|csc|csch|cschr|cscr|csqrt|curtime|date|dateUTC|deaths|dehomogenized|deleteWire|deparent|det|diagonal|difference|distance|distance2|distanceLeftSolid|dot|driver|dsClearGroups|dsClk|dsClkName|dsGetAngle|dsGetArray|dsGetBone|dsGetComplex|dsGetEffect|dsGetEntity|dsGetGroup|dsGetGroups|dsGetHash|dsGetMatrix|dsGetMatrix2|dsGetMatrix4|dsGetNumber|dsGetQuaternion|dsGetRanger|dsGetScope|dsGetSender|dsGetString|dsGetTable|dsGetType|dsGetVector|dsGetVector2|dsGetVector4|dsGetWirelink|dsJoinGroup|dsLeaveGroup|dsProbe|dsSend|dsSendDirect|dsSetScope|duped|dupefinished|e|effect|egp3DTracker|egpAddVertices|egpAlign|egpAlpha|egpAngle|egpBox|egpBoxOutline|egpBytesLeft|egpCanSendUmsg|egpCircle|egpCircleOutline|egpClear|egpClearQueue|egpColor|egpColor4|egpCopy|egpCursor|egpDrawTopLeft|egpFidelity|egpFont|egpGlobalPos|egpGlobalVertices|egpHasObject|egpHudToggle|egpLine|egpLineStrip|egpLoadFrame|egpMaterial|egpMaterialFromScreen|egpMaxObjects|egpMaxUmsgPerSecond|egpNumObjects|egpOrder|egpOrderAbove|egpOrderBelow|egpOrigin|egpParent|egpParentToCursor|egpPoly|egpPolyOutline|egpPos|egpQueue|egpQueueClk|egpQueueClkPly|egpQueuePlayer|egpQueueScreen|egpQueueScreenWirelink|egpRadius|egpRemove|egpResolution|egpRoundedBox|egpRoundedBoxOutline|egpRunOnQueue|egpSaveFrame|egpScale|egpScrH|egpScrSize|egpScrW|egpSetText|egpSize|egpSizeNum|egpText|egpTextLayout|egpToWorld|egpTrackerParent|egpTriangle|egpTriangleOutline|egpUnParent|egpVertices|egpWedge|egpWedgeOutline|ejectPod|element|elevation|enableConstraintUndo|entity|error|exists|exit|exp|explode|explodeRE|eye|eyeAngles|eyeTrace|eyeTraceCursor|fileAppend|fileCanList|fileCanLoad|fileCanWrite|fileClk|fileList|fileListClk|fileLoad|fileLoaded|fileLoadedList|fileLoading|fileLoadingList|fileMaxSize|fileName|fileRead|fileReadList|fileStatus|fileWrite|find|findAllowClass|findAllowEntities|findAllowEntity|findAllowModel|findAllowPlayer|findAllowPlayerProps|findByClass|findByModel|findByName|findCanQuery|findClearBlackClassList|findClearBlackEntityList|findClearBlackList|findClearBlackModelList|findClearBlackPlayerPropList|findClearWhiteClassList|findClearWhiteEntityList|findClearWhiteList|findClearWhiteModelList|findClearWhitePlayerPropList|findClipFromBox|findClipFromClass|findClipFromEntities|findClipFromEntity|findClipFromModel|findClipFromName|findClipFromPlayerProps|findClipFromSphere|findClipToBox|findClipToClass|findClipToEntities|findClipToEntity|findClipToModel|findClipToName|findClipToPlayerProps|findClipToRegion|findClipToSphere|findClosest|findCount|findDisallowClass|findDisallowEntities|findDisallowEntity|findDisallowModel|findDisallowPlayer|findDisallowPlayerProps|findExcludeClass|findExcludeEntities|findExcludeEntity|findExcludeModel|findExcludePlayer|findExcludePlayerProps|findInBox|findInCone|findInSphere|findIncludeClass|findIncludeEntities|findIncludeEntity|findIncludeModel|findIncludePlayer|findIncludePlayerProps|findMax|findPlayerByName|findPlayerBySteamID|findPlayerBySteamID64|findRE|findResult|findSortByDistance|findToArray|findToTable|findUpdateRate|first|flip|floor|format|forward|frac|fraction|fractionLeftSolid|frags|frexp|friends|fromUnit|gDeleteAllAng|gDeleteAllEnt|gDeleteAllNum|gDeleteAllStr|gDeleteAllVec|gDeleteAng|gDeleteEnt|gDeleteNum|gDeleteStr|gDeleteVec|gGetAng|gGetEnt|gGetGroup|gGetNum|gGetShare|gGetStr|gGetVec|gRemoveAll|gRemoveAllAngles|gRemoveAllArrays|gRemoveAllBones|gRemoveAllComplexs|gRemoveAllEffects|gRemoveAllEntitys|gRemoveAllMatrix2s|gRemoveAllMatrix4s|gRemoveAllMatrixs|gRemoveAllNumbers|gRemoveAllQuaternions|gRemoveAllRangers|gRemoveAllStrings|gRemoveAllTables|gRemoveAllVector2s|gRemoveAllVector4s|gRemoveAllVectors|gRemoveAllWirelinks|gResetGroup|gSetAng|gSetEnt|gSetGroup|gSetNum|gSetStr|gSetVec|gShare|gTable|gTableSafe|gamemode|getAlpha|getBodygroups|getCode|getCodeIncludes|getColor|getColor4|getConstraints|getMaterial|getMaterials|getName|getSkin|getSkinCount|getSubMaterial|getTimers|getWireInputs|getWireOutputs|gmatch|gravity|gtable|hardQuota|hasConstraints|hasInput|hasOutput|hash|hashNoComments|heading|health|height|hideChat|hint|hintDriver|hit|hitGroup|hitNormal|hitSky|hitTexture|hitWorld|holoAlpha|holoAmount|holoAng|holoBodygroup|holoBodygroups|holoBoneScale|holoCanCreate|holoClip|holoClipEnabled|holoClipsAvailable|holoColor|holoCreate|holoDelete|holoDeleteAll|holoDisableShading|holoEntity|holoIndex|holoMaterial|holoMaxAmount|holoModel|holoModelAny|holoModelList|holoParent|holoParentAttachment|holoPlayerColor|holoPos|holoRemainingSpawns|holoRenderFX|holoReset|holoScale|holoScaleUnits|holoShadow|holoSkin|holoUnparent|holoVisible|hostip|hostname|hsl2rgb|hsv2rgb|httpCanRequest|httpClk|httpData|httpRequest|httpRequestUrl|httpUrlDecode|httpUrlEncode|hydraulic|i|id|identity|identity2|identity4|imag|inNoclip|inVehicle|index|inertia|inf|inputClk|inputClkName|inputType|inputs|inrange|insertAngle|insertArray|insertBone|insertComplex|insertEffect|insertEntity|insertMatrix|insertMatrix2|insertMatrix4|insertNumber|insertQuaternion|insertRanger|insertString|insertTable|insertVector|insertVector2|insertVector4|insertWirelink|int|intersect|interval|inv|inverseA|invert|ioGetInputAngle|ioGetInputArray|ioGetInputBone|ioGetInputComplex|ioGetInputEffect|ioGetInputEntity|ioGetInputMatrix|ioGetInputMatrix2|ioGetInputMatrix4|ioGetInputNumber|ioGetInputQuaternion|ioGetInputRanger|ioGetInputString|ioGetInputTable|ioGetInputVector|ioGetInputVector2|ioGetInputVector4|ioGetInputWirelink|ioInputEntity|ioOutputEntities|ioSetOutput|isAdmin|isAlive|isConstrained|isConstrainedTo|isCrouch|isDedicated|isFlashlightOn|isFrozen|isHiSpeed|isInWorld|isLan|isNPC|isOnFire|isOnGround|isPlayer|isPlayerHolding|isSinglePlayer|isSteamFriend|isSuperAdmin|isTyping|isUnderWater|isValid|isValidPhysics|isVehicle|isWeapon|isWeldedTo|isWorld|isfinite|isinf|isnan|j|jsonDecode|jsonEncode|jsonError|k|keyAttack1|keyAttack2|keyBack|keyClk|keyClkPressed|keyDuck|keyForward|keyJump|keyLeft|keyLeftTurn|keyPressed|keyReload|keyRight|keyRightTurn|keySprint|keyUse|keyWalk|keyZoom|keys|killPod|last|lastConnectedPlayer|lastDisconnectedPlayer|lastSaid|lastSaidTeam|lastSaidWhen|lastSpoke|left|length|length2|lerp|ln|lockPod|log|log10|log2|lookupAttachment|lower|mRotation|makeSpherical|map|mass|massCenter|massCenterL|matType|match|matchFirst|matrix|matrix2|matrix4|max|maxFrictionMass|maxIndex|maxOfType|maxPlayers|maxVec|maxquota|merge|min|minFrictionMass|minIndex|minVec|minquota|mix|mod|model|name|ncount|nearestPoint|noCollide|noCollideAll|nobone|noentity|noranger|normalized|nowirelink|npcAttack|npcDisp|npcFace|npcGetTarget|npcGiveWeapon|npcGoRun|npcGoWalk|npcRelationship|npcRelationshipByOwner|npcSetTarget|npcShoot|npcStop|numPlayers|number|opcounter|ops|outerProduct|outputType|outputs|owner|parent|parentBone|parentTo|passenger|perf|pi|ping|pitch|play|playerConnectClk|playerDamage|playerDisconnectClk|players|playersAdmins|playersSuperAdmins|pointContents|pointContentsArray|pointHasContent|pop|popAngle|popArray|popBone|popComplex|popEffect|popEntity|popMatrix|popMatrix2|popMatrix4|popNumber|popQuaternion|popRanger|popString|popTable|popVector|popVector2|popVector4|popWirelink|pos|position|positionLeftSolid|positive|primaryAmmoType|print|printColor|printColorDriver|printDriver|printTable|propBreak|propCanCreate|propDelete|propDeleteAll|propDrag|propDraw|propFreeze|propGetElasticity|propGetFriction|propGravity|propInertia|propMakePersistent|propManipulate|propNotSolid|propPhysicalMaterial|propSetBuoyancy|propSetElasticity|propSetFriction|propSetVelocity|propSetVelocityInstant|propShadow|propSpawn|propSpawnEffect|propSpawnUndo|propStatic|pushAngle|pushArray|pushBone|pushComplex|pushEffect|pushEntity|pushMatrix|pushMatrix2|pushMatrix4|pushNumber|pushQuaternion|pushRanger|pushString|pushTable|pushVector|pushVector2|pushVector4|pushWirelink|qMod|qRotation|qi|qj|qk|quat|quaternion|radius|randint|random|randvec|randvec2|randvec4|ranger|rangerAngle|rangerAngleHull|rangerDefaultZero|rangerFilter|rangerFlags|rangerHitEntities|rangerHitWater|rangerHull|rangerIgnoreWorld|rangerOffset|rangerOffsetHull|rangerPersist|rangerReset|readArray|readCell|readString|real|realtime|remoteSetCode|remoteUpload|remove|removeAngle|removeArray|removeBone|removeComplex|removeEffect|removeEntity|removeMatrix|removeMatrix2|removeMatrix4|removeNumber|removeQuaternion|removeRanger|removeSpherical|removeString|removeTable|removeTrails|removeVector|removeVector2|removeVector4|removeWirelink|removing|repeat|replace|replaceRE|reposition|rerotate|reset|reverse|rgb2digi|rgb2hsl|rgb2hsv|right|roll|root|rope|rotate|rotateAroundAxis|rotationAngle|rotationAxis|rotationVector|round|row|rowMatrix|rowMatrix2|rowMatrix4|runOnChat|runOnFile|runOnHTTP|runOnKeys|runOnLast|runOnList|runOnPlayerConnect|runOnPlayerDisconnect|runOnSignal|runOnTick|seatSpawn|sec|sech|sechr|secondaryAmmoType|secr|select|selfDestruct|selfDestructAll|serverUUID|setAlpha|setAng|setAngle|setAngles|setArray|setAttachment|setBodygroup|setBone|setColor|setColumn|setComplex|setConstant|setDamageType|setDamping|setDiagonal|setEffect|setElement|setEntIndex|setEntity|setFlags|setGtable|setHitBox|setLength|setMagnitude|setMass|setMaterial|setMaterialIndex|setMatrix|setMatrix2|setMatrix4|setName|setNormal|setNumber|setOrigin|setPitch|setPos|setQuaternion|setRadius|setRanger|setRenderMode|setRoll|setRow|setScale|setSkin|setStart|setString|setSubMaterial|setSurfaceProp|setTable|setTrails|setVector|setVector2|setVector4|setW|setWirelink|setX|setXyz|setY|setYaw|setZ|shift|shiftAngle|shiftBone|shiftComplex|shiftEffect|shiftEntity|shiftL|shiftMatrix|shiftMatrix2|shiftMatrix4|shiftNumber|shiftQuaternion|shiftR|shiftRanger|shiftString|shiftVector|shiftVector2|shiftVector4|shiftWirelink|shootPos|sign|signalClearOnRemove|signalClk|signalGetGroup|signalGroup|signalName|signalSend|signalSendDirect|signalSendToPlayer|signalSender|signalSenderId|signalSetGroup|signalSetOnRemove|sin|sinh|sinhr|sinr|slerp|slider|softQuota|soundDuration|soundPitch|soundPlay|soundPurge|soundStop|soundVolume|speedLimit|sqrt|startSolid|steamFriends|steamID|steamID64|steamIDFrom64|steamIDTo64|stopAllTimers|stoptimer|string|sub|sum|swapColumns|swapElements|swapRows|systime|table|tan|tanh|tanhr|tanr|team|teamColor|teamDeaths|teamFrags|teamName|teamPlayers|teamScore|teams|tickClk|tickInterval|time|timeConnected|timer|toAngle|toArray|toByte|toChar|toDeg|toLocal|toLocalAng|toLocalAxis|toLocalPosAng|toNumber|toRad|toString|toTable|toUnicodeByte|toUnicodeChar|toUnit|toWorld|toWorldAng|toWorldAxis|toWorldPosAng|tool|trace|transpose|trim|trimLeft|trimRight|trusts|ttcGetLinks|ttcSetColor|ttcSetDefaults|ttcSetDetail|ttcSetFlipMat|ttcSetHeight|ttcSetMaterial|ttcSetOffset|ttcSetRadius|ttcSetRollerRadius|ttcSetSlack|ttcSetSprocket|ttcSetTension|ttcSetWidth|type|typeids|typeidsArray|unicodeLength|unset|unshiftAngle|unshiftArray|unshiftBone|unshiftComplex|unshiftEffect|unshiftEntity|unshiftMatrix|unshiftMatrix2|unshiftMatrix4|unshiftNumber|unshiftQuaternion|unshiftRanger|unshiftString|unshiftTable|unshiftVector|unshiftVector2|unshiftVector4|unshiftWirelink|up|upper|values|vec|vec2|vec4|vector|vector2|vector4|vehicle|vel|velL|volume|vonDecode|vonDecodeTable|vonEncode|vonError|w|weapon|weld|weldAng|winch|wirelink|world|wrap|writeArray|writeCell|writeString|writeTable|writeUnicodeString|x|xyz|y|yaw|z
+  thirdparty: ''
+
+contexts:
+  main:
+    - include: comments
+    - include: constants
+    - include: directives
+    - include: functions
+    - include: keywords
+    - include: operators
+    - include: strings
+    - include: types
+    - include: variables
+
+    - match: \b([a-z]\w*)\b
+      scope: invalid.expression2
+
+  comments:
+    - match: (#include)\s(\")
+      captures:
+        1: keyword.expression2
+        2: string.expression2
+      push:
+        - meta_scope: string.expression2
+        - match: '"'
+          pop: true
+
+    - match: (#\[)
+      scope: comment.expression2
+      push:
+        - meta_scope: comment.expression2
+        - match: (\]#)
+          pop: true
+    - match: (#)
+      scope: comment.expression2
+      push:
+        - meta_scope: comment.expression2
+        - match: (\n)
+          pop: true
+
+  constants:
+    - match: \b({{constants}})\b
+      captures:
+        1: constant.language.expression2
+    - match: \b0x[a-fA-F\d]+|\b\d+(\.\d+)?([eE]-?\d+)?|\.\d+([eE]-?\d+)?
+      scope: constant.numeric.expression2
+
+  directives:
+    - match: ({{directives}})
+      scope: directive.expression2
+
+  functions:
+    - match: \b({{functions}}|{{thirdparty}})\b(\()
+      captures:
+        1: function.expression2
+        2: operator.expression2
+    - match: ((?![{{functions}}|{{thirdparty}]\b)\b\w+)(\()
+      captures:
+        1: user_function.expression2
+        2: operator.expression2
+
+  keywords:
+    - match: \b({{keywords}})\b
+      captures:
+        1: keyword.expression2
+
+  operators:
+    - match: ({{operators}})
+      scope: operator.expression2
+
+  strings:
+    - match: '"'
+      scope: string.expression2
+      push:
+        - meta_scope: string.expression2
+        - match: '"'
+          scope: string.expression2
+          pop: true
+        - match: \\.
+          scope: string.expression2
+        - match: '"'
+          pop: true
+
+  types:
+    - match: \b({{types}})\b
+      scope: type.expression2
+
+  variables:
+    - match: \b([A-Z]\w*)\b
+      scope: variable.expression2

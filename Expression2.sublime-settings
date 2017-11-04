@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the Expression2 syntax
+{
+    "color_scheme": "Packages/User/Expression2.tmTheme",
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+    "highlight_line": true,
+}
